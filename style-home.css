@@ -1,0 +1,66 @@
+body {
+    background-color: #FFFFFF;
+}
+
+#banner {
+   width: 100% 
+}
+
+.principal {
+
+    background-color: #CCCCCC;
+    padding: 30px;
+}
+
+.titulo-principal {
+    padding-left: 20px;
+}
+
+.titulo-centralizado {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+p em strong {
+
+    /* The "0" represents no color, while the "F" represents
+    maximum color.*/
+
+    /* The first two letters represent the amount of red, the next two
+    the amount of green, and the last two the amount of blue. */
+
+    color: #FF0000;
+}
+
+#missao {
+    font-size: 20px;
+}
+
+.item {
+    font-style: italic;
+}
+
+.beneficios {
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+ul {
+
+    /* The inline-block display allows the element to occupy only its defined
+    width and height, which can be customized. */
+
+    display: inline-block;
+
+    vertical-align: top;
+    
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagem-beneficios {
+    width: 50%;
+}

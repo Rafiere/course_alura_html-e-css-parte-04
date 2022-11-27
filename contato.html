@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Contato - Barbearia Alura</title>
+
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./contato.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1>
+                    <img src="./assets/logo.png" alt="Logo da Barbearia Alura">
+                </h1>
+    
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li> <!-- The "a" tag serves to create a connection between two pages -->
+                        <li><a href="./produtos.html">Produtos</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <label for="nome-e-sobrenome">Nome e Sobrenome</label>
+                <input id="nome-e-sobrenome" type="text" class="input-padrao" required>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input id="telefone" type="tel" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                <!-- The "textarea" element allows user write more than one line of text. -->
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+
+                <!-- The "fieldset" element is used to group a set of forms that are
+                about the same subject.-->
+
+                <fieldset>
+
+                    <!-- The "legend" tag is the title of a fieldset. -->
+
+                    <legend>Como prefere o nosso contato?</legend>
+
+                    <!-- The "name" property allows to check only one radio button
+                    that have the same "name" property value per time. -->
+
+                    <label for="radio-email">
+                        <input id="radio-email" name="contato" type="radio" value="email">Email</input>
+                    </label>
+
+                    <label for="radio-telefone">
+                        <input id="radio-telefone" name="contato" type="radio" value="telefone">Telefone</input>
+                    </label>
+
+                    <label for="radio-whatsapp">
+                        <input id="radio-whatsapp" name="contato" type="radio" value="whatsapp" CHECKED>WhatsApp</input>
+                    </label>
+
+                    <fieldset>
+                        <legend>Qual horário prefere ser atendido?</legend>
+                        <select>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </fieldset>
+
+                    <!-- We can insert the input tag inside the label tag so we
+                    don't need to insert an "id" and a "for" to connect the two 
+                    elements. -->
+
+                    <label>
+                        <input type="checkbox" class="checkbox" checked>Gostaria de receber nossas novidades por email?</input>
+                    </label>
+
+                    <input class="enviar" type="submit" value="Enviar Formulário">
+                </fieldset>
+
+            </form>
+
+            <table>
+
+                <!-- This tag indicates the head of table -->
+
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+
+                <!-- This tag indicates the body of table -->
+
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+
+        <footer>
+            <img src="./assets/logo-branco.png" alt="Logo da Barbearia Alura">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+        </footer>
+
+    </body>
+</html>
